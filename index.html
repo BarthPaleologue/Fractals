@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Explore various fractals online." />
+    <meta name="robots" content="index, follow" />
+    <title>Fractal Explorer Online</title>
+    <link rel="icon" type="image/png" href="icons/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Fractal Explorer<sub>v0.4</sub></h1>
+    </header>
+    <section>
+        <div id="menu">
+            <div id="mandelbrot">
+                <p>Mandelbrot Set</p>
+            </div>
+            <div id="julia">
+                <p>Julia Sets</p>
+            </div>
+            <div id="newton_raphson">
+                <p>Newton Raphson</p>
+            </div>
+            <div id="trees">
+                <p>Fractal Trees</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="github"></div>
+        <div id="plus"></div>
+    </footer>
+    <div id="explorer">
+        <canvas id="renderer" width="500" height="500"></canvas>
+        <div id="settings"></div>
+    </div>
+    <p id="loading">Loading...</p>
+    <div id="selector"></div>
+    <script src="scripts/script.js"></script>
+</body>
+<script src="scripts/jquery_ui/jquery-ui.min.js"></script>
+<script src="scripts/jquery.ui.touch-punch.min.js"></script>
+<script src="scripts/jscolor.js"></script>
+<link rel="stylesheet" href="scripts/jquery_ui/jquery-ui.min.css" />
+
+</html>
